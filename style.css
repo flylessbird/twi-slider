@@ -9,46 +9,35 @@ body {
 .card {
  display: none;
 }
+/*set card-container position center max-width 1000px relative to body*/
 .card-container {
     margin: 50 auto auto auto;
     max-width: 1000px;
+    width: 100vw;
     position: relative;
+    background: #f1f1f1;
 }
-.numbertext {
+
+div.image {
+  position: relative;
+  margin: 0 25%;
+}
+/*set roslyn to have width 70%*/
+div.image_ros {
+  position: relative;
+  margin: 0 35%;
+}
+div.numbertext {
   color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
+  color: white;
   top: 0;
 }
-img,iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.text {
-  text-align: center;
-}
-
-blockquote {
-      display: block;
-      padding: 0;
-      text-align: center;
-      margin-top: -10px;
-  }
- 
-img, iframe {
-  /*filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);*/
-}
-
-/* Slideshow container */
-/* Next & previous buttons */
-.prev,.next{
+a.prev,a.next{
   cursor: pointer;
   position: absolute;
-  /*why it float*/
   top: 50%;
   width: auto;
   padding: 10px;
@@ -60,6 +49,24 @@ img, iframe {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+img,iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.text {
+  text-align: center;
+  
+}
+
+blockquote {
+      display: block;
+      padding: 0;
+      text-align: center;
+      margin-top: -10px;
+  }
+ 
 .prev{
   margin-left: 0;
 }
